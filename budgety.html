@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Budgety</title>
+	<link rel="stylesheet" type="text/css" href="budgety.css">
+</head>
+<body>
+	<div class="top">
+		<div class="profitShow">
+			<p class="month">Available budget for <span class="budget__title--class">%month%: </span></p>
+			<h2 class="moneyAv">+ 1500.00</h2>
+			<br>
+			<div class="profit">
+				<p class="profitNum">+ 1900.00</p>
+			</div>
+			<div class="costPN">
+				<p class="costNum">- 400.00</p>
+				<div class="cost__percent">20%</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="entery">
+			<div class="add">
+				<div class="add__container">
+					<select class="add__type">
+						<option value="inc">+</option>
+						<option value="exp">-</option>
+					</select>
+				</div>
+			</div>
+			<div class="howMuchMoney">
+				<input type="text" class="description" name="text" placeholder="add description" />
+				<input type="number" class="value" name="text" placeholder="value" />
+				<br>
+				<button class="done"><img class="pic-done" src="tick.png"><i class="ion-ios-close-outline"></i></button>
+			</div>
+			<div class="dayDate">
+				<p class="date">24th April 2021</p>
+				<p class="time">33:56</p>
+			</div>
+		</div>
+		<div class="container clearfix">
+			<div class="income">
+				<h2 class="income__headline"><b>Income</b></h2>
+<!--
+				<div class="item clearfix" id="income-0">
+					<div class="item__description float">Salary</div>
+					<div class="right clearfix">
+						<div class="item__value float">+ 2,100.00</div>
+						<div class="item__delete float">
+							<button class="item__delete--btn"><img class="cross" src="cross.png"></button>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="item clearfix" id="income-1">
+					<div class="item__description float">Sold car</div>
+					<div class="right clearfix">
+						<div class="item__value float">+ 1,500.00</div>
+						<div class="item__delete float">
+							<button class="item__delete--btn"><img class="cross" src="cross.png"></button>
+						</div>
+					</div> 
+				</div>
+-->
+			</div>
+
+			<div class="expense">
+				<h2 class="expense__headline"><b>Expenses</b></h2>
+<!--
+				<div class="item clearfix" id="expense-0">
+					<div class="item__description float">Holiday</div>
+					<div class="right clearfix">
+						<div class="item__value float">- 1,000.00</div>
+						<div class="item__percent float">20%</div>
+						<div class="item__delete float">
+							<button class="item__delete--btn"><img class="cross" src="cross.png"></button>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="item clearfix" id="expense-1">
+					<div class="item__description float">bought a laptop</div>
+					<div class="right clearfix">
+						<div class="item__value float">- 1,500.00</div>
+						<div class="item__percent float">30%</div>
+						<div class="item__delete float">
+							<button class="item__delete--btn"><img class="cross" src="cross.png"></button>
+						</div>
+					</div>
+				</div>	
+-->
+			</div>
+		</div>
+	</div>
+</body>
+<script src="budgety.js"></script>
+</html>
