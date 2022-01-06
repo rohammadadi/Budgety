@@ -1,0 +1,241 @@
+body{
+	background-color: rgb(170, 170, 170);
+	width: 1520px;
+}
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.profitShow{
+	border: 2px solid rgb(70, 70, 70);
+	background-image: url('coolB.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+	height: 300px;
+	color: whitesmoke;
+	font-family: Adobe Ming Std;
+}
+.moneyAv{
+	font-size: 60px;
+	text-align: center;
+	margin-top: -70px;
+}
+.month{
+	font-size: 38px;
+	text-align: center;
+}
+.profitNum, .costPN{
+	font-size: 20px;
+	margin-left: 550px;
+	margin-right: 550px;
+	padding-left: 20px;
+	height: 35px;
+	border-radius: 7px;
+}
+.costPN{
+	margin-top: -5px;
+	border: 2px solid rgba(180, 180, 180, 1);
+	background-color: rgb(128, 0 ,128);
+	opacity: 0.95;
+	color: white !important;
+}
+.costNum{
+	margin-top: 0px;
+}
+.cost__percent{
+	margin-top: -63px;
+	margin-left: 350px;
+}
+.profitNum{
+	margin-top: -90px;
+	border: 2px solid rgba(180, 180, 180, 1);
+	background-color: cyan;
+	opacity: 0.95;
+	color: black !important;
+}
+.entery{
+	margin-top: 10px;
+	border: 2px solid rgb(170, 170, 170);
+	margin: -2px -8px 15px -8px;
+	background-color: rgb(180, 180, 180);
+	box-shadow: 0rem 0.3rem 1rem black;
+	height: 50px;
+}
+input, select{
+	border-radius: 5px;
+	height: 25px;
+	background-color: rgb(150, 150, 150);
+	color: white;
+	border: 1px solid white;
+	margin-left: 15px;
+}
+input::placeholder{
+	color: white;
+}
+input{
+	height: 33px !important;
+}
+input:focus, select:focus{
+	color: cyan;
+	border-radius: 0px;
+	transition: all 0.2s;
+	font-weight: italic;
+}
+.red-focus:focus{
+	color: rgb(128, 0, 128) !important;
+	font-weight: italic;
+}
+.description{
+	width: 250px;
+}
+.value{
+	width: 50px;
+}
+.add__type, .value, .description{
+	float: left;
+	height: 30px;
+	margin-top: 5px;
+}
+.add__type{
+	margin-left: 36%;
+	height: 37px !important;
+	width: 45px;
+}
+.pic-done{
+	width: 30px;
+	height: 30px;
+}
+.done{
+	padding: 0px;
+	width: 35px;
+	height: 35px;
+	margin-bottom: 10px;
+	border-color: white;
+	margin-top: -12px;
+	margin-left: 10px;
+	border-radius: 0%;
+}
+.dayDate{
+	color: black;
+	margin-top: -10px;
+	margin-bottom: 0px;
+}
+.date{
+	position: relative;
+	top: -50px;
+	left: 1400px;
+}
+.time{
+	position: relative;
+	top: -67px;
+	left: 1315px;
+}
+.float{
+	float: left;
+}
+.income{
+	width: 50%;
+	border: 2px dashed transparent;
+	border-color: rgb(170, 170, 170);
+	background-color: rgb(170, 170, 170);
+	color: black;
+}
+.income, .expense{
+	height: 30px;
+	margin-top: 15px;
+}
+.expense{
+	border: 2px dashed transparent;
+	border-color: rgb(170, 170, 170);
+	margin-left: 50%;
+	width: 50%;
+	margin-top: -34px;
+	background-color: rgb(170, 170, 170);
+	color: black;
+}
+.income__headline, .expense__headline{
+	margin-top: 0px;
+}
+.expense .item__value{
+	position: absolute;
+	right: 80px;
+	color: rgb(128, 0, 128);
+	font-weight: bold;
+}
+.income .item__value{
+	position: absolute;
+	right: 30px;
+	color: cyan;
+	font-weight: bold;
+}
+.item__delete--btn{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display: block;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	cursor: pointer;
+}
+.cross{
+	width: 27px;
+	height: 27px;
+}
+.item__percent{
+	position: absolute;
+	border: 1px solid rgb(128, 0, 128);
+	right: 35px;
+	background-color: rgb(128, 0, 128);
+	padding: 2px;
+	top: 2px;
+	color: white;
+}
+.income .item{
+	margin: 5px;
+	padding: 5px;
+	color: white;
+	border: 2px solid black;
+	background-color: black;
+	height: 20px;
+	width: 500px;
+	position: relative;
+	box-shadow: 0rem 0rem 2rem black;
+	cursor: initial;
+}
+.expense .item{
+	margin: 5px;
+	padding: 5px;
+	border: 2px solid black;
+	background-color: black;
+	color: white;
+	height: 20px;
+	width: 500px;
+	position: relative;
+	box-shadow: 0rem 0rem 2rem black;
+	cursor: initial;
+}
+.item__description{
+	position: fixed;
+}
+.income .item__delete--btn{
+	border-color: black;
+}
+.expense .item__delete--btn{
+	border-color: black;
+}
+.item:hover{
+	transform: translateX(10px);
+	box-shadow: 0rem 0rem 0rem black;
+	transition: all 0.6s;
+}
+.item:not(hover){
+	transform: translateX(0px);
+	box-shadow: 0rem 0rem 0rem black;
+	transition: all 0.6s;
+}
